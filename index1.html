@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Amrit's Website</title>
+    <style>
+     .{
+        margin: 0;
+        padding: 0;
+        box-sizing:border-box ;
+        font-family: 'poppins', sans-serif;
+     }
+     body{
+        background: #081b29;
+     }
+     .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 80%;
+        padding: 20px 10%;
+        background: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+     }
+     .logo{
+        font-size: 25px;
+        color: #ededed;
+        text-decoration: none;
+        font-weight: 600;
+        transition: .3s;
+     }
+     .navbar a{
+        font-size: 18px;
+        color: #ededed;
+        text-decoration: none;
+        font-weight: 500;
+        margin-left: 35px;
+     }
+     .navbar a :hover,
+     .navbar a.active{
+        color: #00abf0;
+     }
+     .home{
+        height: 100vh;
+        background: url() no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        padding: 0 10%;
+
+     }
+     .home-content{
+        max-width: 600px;
+
+     }
+     .home-content h1 {
+        font-size: 50px;
+        font-weight: 700;
+        color: #fff;
+        line-height: 1.2;
+
+     }
+     .home-content h3 {
+        font-size: 32px;
+        font-weight: 700;
+        color: #00abf0;
+     }
+     .home-content p{
+        font-size: 16px;
+        color: #fff;
+        margin: 20px 0 40px;
+     }
+     .home-content .btn-box{
+        display: flex;
+        justify-content: space-between;
+        width: 345px;
+        height: 50px;
+        
+     }
+     .btn-box a{
+    position: relative;
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 150px;
+     height: 100%;
+     background: #00abf0;
+     border: 2px solid #00abf0;
+     border-radius: 8px;
+     font-size: 19px;
+     color:#081b29;
+     text-decoration: none;
+     font-weight: 600;
+     letter-spacing: 1px;
+     z-index: 1;
+     overflow: hidden;
+     transition: .5s;
+
+         }
+         .btn-box a:hover{
+            color: #00abf0;
+         }
+         .btn-box a:nth-child(2){
+            background: transparent;
+            color: #00abf0;
+         }
+         .btn-box a:nth-child(2):hover{
+            color: #081b29;
+         }
+         .btn-box a:nth-child(2)::before {
+            background: #00abf0;
+         }
+         .btn-box a::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: #081b29;
+            z-index: -1;
+            transition: .5s;
+
+         }
+         .btn-box a:hover::before{
+            width: 100%;
+         }
+         .home-imgHover{
+            position: absolute;
+            top: 58px;
+            right:30px;
+            width: 500px;
+            height: 98%;
+            background: transparent;
+            transition: 3s;
+            background: url(../Downloads/IMG_2510.JPG) no-repeat;
+        background-position: center;
+        background-size: cover;
+         }
+         .homer a{
+            display: inline-flex;
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            border: 2px solid #00abf0;
+        }
+         .home-imgHover:hover{
+            background: ;
+            opacity: .8;
+         }
+           h2{
+           color: #fff;
+           padding-left: 15px;
+           }
+        p{
+            color:#fff;
+            padding-left: 30px;
+        }
+        .box{
+            position: relative;
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 150px;
+     height: 100%;
+     background: #00abf0;
+     border: 2px solid #00abf0;
+     border-radius: 8px;
+     font-size: 19px;
+     color:#081b29;
+     text-decoration: none;
+     font-weight: 600;
+     letter-spacing: 1px;
+     z-index: 1;
+     overflow: hidden;
+     transition: .5s;
+     box-sizing: border-box;
+    }
+    .box a:hover{
+            color: #00abf0;
+    }
+    
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Amrit's Website</a>
+        
+        <nav class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#"></a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h1>Hi, i'm Amrit Kumar</h1>
+            <h3>Web Designer</h3>
+            <p>I am a student who loves creating websites/webpages. I have experince of doing coding over a year.<br>
+                Coding is not easy its to not impossible.
+                I love coding and cracking the logic and to enhance my knowledge.
+            </p>
+            <div class="btn-box">
+                <a href="mailto:amritdumka97@gmail.com"> Hire Me</a>
+                <a href="tel:8292810552">Let's Talk</a>
+            </div>
+        </div>
+        <div classs="homer">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+        <span class="home-imgHover"></span>
+    </section>
+    
+        <h2>I'm currently available for freelance work.</h2>
+
+<p>If you have a project that you want to get started, think<br> you need my help with something or just fancy <br>
+    saying hey, then get in touch.
+<br>
+
+
+<br>
+<p>&copy2023 All Right Reserved. Amrit kumar</p>
+    
+</body>
+</html>
